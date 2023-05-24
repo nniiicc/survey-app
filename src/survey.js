@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Form, Table } from "react-bootstrap";
+import { Button, Form, Table, Container, Row, Col} from "react-bootstrap";
 import axios from 'axios';
 import { CSVLink } from "react-csv";
 
@@ -35,6 +35,9 @@ const Survey = () => {
   };
 
   return (
+    <Container>
+    <Row className="justify-content-center">
+    <Col xs={12} md={8} lg={6}>
     <Form onSubmit={handleSubmit}>
       <Form.Group>
         <Form.Label>Name</Form.Label>
@@ -87,6 +90,9 @@ const Survey = () => {
         </CSVLink>
       )}
     </Form>
+    </Col>
+    </Row>
+    </Container>
   );
 };
 

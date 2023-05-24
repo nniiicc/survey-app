@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Survey from './Survey';
+import Survey from './survey';
 
 function App() {
   return (
